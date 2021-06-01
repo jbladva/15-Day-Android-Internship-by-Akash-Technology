@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        />
+
+    <EditText
+        android:id="@+id/uname"
+        android:background="@drawable/rounededcorner"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:hint="Enter username"
+        android:textSize="25dp"
+
+        android:layout_gravity="center"
+
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounededcorner"
+        android:hint="Enter email ID"
+        android:textSize="25dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+
+        />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number"
+        android:textSize="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounededcorner"
+        android:padding="5dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_gravity="center"
+
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textSize="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounededcorner"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Walking"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/gaming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaming"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/riding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riding"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="30sp"
+    android:paddingLeft="30sp"
+    android:text="Submit"
+    android:textColor="@color/white"
+    android:background="@drawable/roundedbtn"
+    android:textAllCaps="false"
+    android:textSize="15sp"
+    android:layout_gravity="center"/>
+
+
+</LinearLayout>
